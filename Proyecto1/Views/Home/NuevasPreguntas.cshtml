@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewBag.Title = "NuevasPreguntas";
+}
+<h2>Nuevas Preguntas : </h2>
+<div id="marco">
+    Cód.Pregunta:<input class="llenar" disabled />
+    <br />
+    Descripción:<br />
+    <input class="llenar" size="500" />
+    <br />
+    Tema:<br />
+    <select class="llenar">
+        <option>AMBIENTE DE CONTROL</option>
+        <option>INFORMACIÓN Y COMUNICACIÓN</option>
+        <option>INFORMACIÓN Y COMUNICACIÓN</option>
+    </select>
+    <br />
+    <input class="llenar" type="submit" value="Guardar" />
+    <input class="llenar" type="submit" value="Cancelar" />
+    <input class="llenar" type="submit" value="Pregunta que reemplaza" />
+    <input class="llenar" type="submit" value="Respuestas" />
+</div>
+<style>
+    #marco {
+        margin: 12px;
+        border: 1px solid;
+        padding: 12px;
+    }
+
+    .llenar {
+        border-radius: 5px;
+    }
+</style>

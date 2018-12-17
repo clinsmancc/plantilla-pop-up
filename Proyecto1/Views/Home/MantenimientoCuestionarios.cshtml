@@ -1,0 +1,132 @@
+﻿
+@{
+    ViewBag.Title = "MantenimientoCuestionarios";
+}
+
+<h2>Mantenimiento de Cuestionarios : </h2>
+<div>
+    <a href="NuevasPreguntas"><img id="nuevo" src="~/img/nuevo.jpg" /></a>
+    <a href="#"><img id="buscar" src="~/img/buscar.jpg" /></a><input id="buscando" />
+</div>
+<div>
+    <table>
+        <tr id="cab">
+            <td>Periodo</td>
+            <td>Comentarios</td>
+            <td>Cantidad Preguntas</td>
+            <td>Calificación del Cuestionario</td>
+            <td>Fecha Apertura</td>
+            <td>Fecha Cierre</td>
+            <td>Acciones</td>
+        </tr>
+        <tr>
+            <th>2017-2018</th>
+            <td class="columna2">Generado en base a...</td>
+            <td>20</td>
+            <td>100</td>
+            <td>01-Ene-2017</td>
+            <td>31-Jul-2018</td>
+            <td>
+                <a href="#"><img id="extencion" src="~/img/aprobado.png" /></a>
+                <a href="#"><img id="extencion" src="~/img/cerrado.png" /></a>
+                <a href="#"><img id="extencion" src="~/img/adjuntos.png" /></a>
+                <a href="OpcionesRespuestas"><img id="extencion" src="~/img/respuesta.png" /></a>
+                <a href="#"><img id="extencion" src="~/img/alcances.png" /></a>
+                <a href="#"><img id="extencion" src=" " /></a>
+                <a href="#"><img id="extencion" src=" " /></a>
+            </td>
+        </tr>
+        <tr>
+            <th>2018-II</th>
+            <td class="columna2">Se amplio el plazo has...</td>
+            <td>18</td>
+            <td>50</td>
+            <td>01-Ago-2018</td>
+            <td>31-Oct-2018</td>
+            <td>
+                <a href="#"><img id="extencion" src="~/img/aprobado.png" /></a>
+                <a href="#"><img id="extencion" src="~/img/abierto.png" /></a>
+                <a href="#"><img id="extencion" src="~/img/adjuntos.png" /></a>
+                <a href="OpcionesRespuestas"><img id="extencion" src="~/img/respuesta.png" /></a>
+                <a href="#"><img id="extencion" src="~/img/alcances.png" /></a>
+                <a href="#"><img id="extencion" src=" " /></a>
+                <a href="#"><img id="extencion" src=" " /></a>
+            </td>
+        </tr>
+        <tr>
+            <th>2018-2019</th>
+            <td class="columna2">Se esta cerrando el...</td>
+            <td>25</td>
+            <td>100</td>
+            <td>01-Nov-2018</td>
+            <td>31-Dic-2019</td>
+            <td>
+                <a href="#"><img id="extencion" src=" " /></a>
+                <a href="#"><img id="extencion" src=" " /></a>
+                <a href="#"><img id="extencion" src="~/img/adjuntos.png" /></a>
+                <a href="OpcionesRespuestas"><img id="extencion" src="~/img/respuesta.png" /></a>
+                <a href="#"><img id="extencion" src="~/img/alcances.png" /></a>
+                <a href="#"><img id="extencion" src="~/img/editar.jpg" /></a>
+                <a href="#"><img id="extencion" src="~/img/eliminar.jpg" /></a>
+            </td>
+        </tr>
+    </table>
+</div>
+<div>
+    <p id="buscando">Mostrar periodos cerrados</p><input id="buscando" type="checkbox" />
+</div>
+<style>
+    #nuevo {
+        width: 30px;
+        padding-bottom: 8px;
+    }
+
+    #buscando {
+        float: right;
+        border-radius:5px;
+    }
+
+    #buscar {
+        float: right;
+        width: 30px;
+        padding-left: 5px;
+    }
+
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        border: 1px solid;
+        border-color: lavender;
+        width: 100%;
+        margin-bottom:8px;
+    }
+
+    td{
+        text-align: center;
+        padding: 8px;
+        border: 1px solid;
+        border-color: cornflowerblue;
+    }
+    .columna2,th{
+        text-align: left;
+        padding: 8px;
+        border: 1px solid;
+        border-color: cornflowerblue;
+    }
+
+    #extencion {
+        width: 25px;
+    }
+
+    #cab {
+        background-color: lavender;
+    }
+
+    .glyphicon-list-alt {
+        padding: 4px;
+        border: 1px solid;
+        border-radius: 15px;
+        border-color: cornflowerblue;
+    }
+</style>
+

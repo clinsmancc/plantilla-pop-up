@@ -1,0 +1,122 @@
+﻿
+@{
+    ViewBag.Title = "MantenimientoPreguntas";
+}
+
+<h2>Mantenimiento Preguntas : </h2>
+<div>
+    <a href="~/PopUp02.aspx"><img id="nuevo" src="~/img/nuevo.jpg"/></a>
+    <a href="#"><img id="buscar" src="~/img/buscar.jpg" /></a><input id="buscando" />
+</div>
+<div>
+    <table>
+        <tr id="cab">
+            <th>Cod.</th>
+            <th>Descripción</th>
+            <th>Tema</th>
+            <th>Acciones</th>
+        </tr>
+        <tr>
+            <th>0001</th>
+            <td>¿La entidad cuenta con un Código de Ética institucional?</td>
+            <td>AMBIENTE DE CONTROL</td>
+            <td  class="columna4">
+                <a href="#"><img class="extencion" src="~/img/reemplaza.png" /></a>
+                <a href="OpcionesRespuestas"><img class="extencion" src="~/img/respuesta.png" /></a>
+                <a href="#"><img class="extencion" src="~/img/editar.jpg" /></a>
+                <a href="#"><img class="extencion" src="~/img/eliminar.jpg" /></a>
+            </td>
+        </tr>
+        <tr>
+            <th>0002</th>
+            <td>¿La información interna promueve la transparencia de gestión?</td>
+            <td>INFORMACIÓN Y COMUNICACIÓN</td>
+            <td class="columna4">
+                <a href="#"><img class="extencion" src="~/img/reemplaza.png" /></a>
+                <a href="OpcionesRespuestas"><img class="extencion" src="~/img/respuesta.png" /></a>
+                <a href="#"><img class="extencion" src="~/img/editar.jpg" /></a>
+                <a href="#"><img class="extencion" src="~/img/eliminar.jpg" /></a>
+            </td>
+        </tr>
+        <tr>
+            <th>0003</th>
+            <td>¿La entidad tiene un programa de capacitación del personal?</td>
+            <td>AMBIENTE DE CONTROL</td>
+            <td class="columna4">
+                <a href="#"><img class="extencion" src="~/img/reemplaza.png" /></a>
+                <a href="OpcionesRespuestas"><img class="extencion" src="~/img/respuesta.png" /></a>
+                <a href="#"><img class="extencion" src="~/img/editar.jpg" /></a>
+                <a href="#"><img class="extencion" src="~/img/eliminar.jpg" /></a>
+            </td>
+        </tr>
+        <tr>
+            <th>0004</th>
+            <td>¿Se difunde información relevante a la ciudadanía?</td>
+            <td>INFORMACIÓN Y COMUNICACIÓN</td>
+            <td class="columna4">
+                <a href="#"><img class="extencion" src="~/img/reemplaza.png" /></a>
+                <a href="OpcionesRespuestas"><img class="extencion" src="~/img/respuesta.png" /></a>
+                <a href="#"><img class="extencion" src="~/img/editar.jpg" /></a>
+                <a href="#"><img class="extencion" src="~/img/eliminar.jpg" /></a>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="columna4">
+                <a href="#"><img class="extencion" src="~/img/reemplaza.png" /></a>
+                <a href="OpcionesRespuestas"><img class="extencion" src="~/img/respuesta.png" /></a>
+                <a href="#"><img class="extencion" src="~/img/editar.jpg" /></a>
+                <a href="#"><img class="extencion" src="~/img/eliminar.jpg" /></a>
+            </td>
+        </tr>
+    </table>
+</div>
+<div>
+    <p id="buscando">Mostrar preguntas reemplazadas</p><input id="buscando" type="checkbox" />
+</div>
+<style>
+    #nuevo {
+        width:30px;
+        padding-bottom:8px;
+    }
+    #buscando{
+        float:right;
+        border-radius:5px;
+    }
+    #buscar {
+        float:right;width:30px;padding-left:5px;
+    }
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        border: 1px solid;
+        border-color: lavender;
+        width: 100%;
+        margin-bottom:8px;
+    }
+
+    td, th {
+        text-align: left;
+        padding: 8px;
+        border: 1px solid;
+        border-color: cornflowerblue;
+    }
+    .columna4 {
+        text-align: center;
+    }
+    .extencion {
+        width:25px;
+    }
+    #cab {
+     background-color:lavender;
+    }
+    .glyphicon-list-alt {
+        padding: 4px;
+        border: 1px solid;
+        border-radius: 15px;
+        border-color: cornflowerblue;
+    }
+</style>
+

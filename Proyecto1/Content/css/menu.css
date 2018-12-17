@@ -1,0 +1,483 @@
+﻿.banner-title {
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.banner-title-img {
+    float: left;
+    display: inline-block;
+}
+
+.btn-hamburger {
+    display: none;
+    border: 0;
+    float: left;
+    padding: 10px;
+    margin: 0;
+    border-radius: 0;
+    background-color: #f3f3f3;
+}
+
+    .btn-hamburger:hover {
+        background-color: #e0dcdc;
+    }
+
+    .btn-hamburger span[class="icon-bar"] {
+        margin-top: 4px;
+        margin-left: 0px;
+        display: block;
+        width: 22px;
+        height: 2px;
+        border-radius: 1px;
+        background-color: #888;
+    }
+
+.icon-bar {
+    background-color: #888;
+    width: 100%;
+    height: 1px;
+}
+
+.menu-caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    float: right;
+    margin-left: 5px;
+    margin-top: 6px;
+    border-top: 4px dashed;
+    border-top: 4px solid \9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+/*MENU***********************************/
+.menu {
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    padding: 0px;
+    /* background-color: #ddd;*/
+    cursor: pointer;
+}
+
+    .menu ul {
+        padding: 0;
+        margin: 0;
+        display: block; /*Para mostrar o no los submenus en la carga inicial*/
+    }
+
+    .menu li {
+        position: relative;
+        min-width: 100px;
+        margin: 0;
+        padding: 0px;
+        text-align: left;
+        white-space: nowrap;
+        list-style: none;
+        background-color: #e8e5e5;
+        overflow:visible;
+    }
+
+        .menu li a {
+            font-weight: normal;
+            display: inline-block;
+            text-decoration: none;
+            white-space: nowrap;
+            padding: 7px 2px 7px 2px;
+            clear: both;
+            margin: 0;
+            color: #000;
+        }
+
+            .menu li a span {
+                color: #000;
+                font-weight: bold;
+            }
+
+            .menu li a:hover {
+                text-decoration: underline;
+            }
+
+            .menu li a span:first-child {
+                margin: 0;
+                margin-right: 5px;
+            }
+        /*Submenu 1*/
+        .menu li ul {
+            /*background-color: #eee;*/
+        }
+
+            .menu li ul li {
+                padding-left: 22px;
+                background-color: #f6f2f2;
+            }
+
+                .menu li ul li a {
+                    display: inline-block;
+                }
+                /*Submenu 2*/
+                .menu li ul li ul {
+                }
+
+                    .menu li ul li ul li {
+                        background-color: #fff;
+                        padding-left: 60px;
+                        margin-left: -22px;
+                    }
+
+                        .menu li ul li ul li a {
+                            display: inline-block;
+                        }
+
+
+/*FIN MENU*******************************/
+/*DROPDOWN******************************/
+.dropdown {
+    position: relative;
+    margin: 3px 0px 0px 0px;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+    .dropdown > li {
+        position: relative;
+        min-width: 100px;
+        margin-right: -4px;
+        padding: 0;
+    }
+
+        .dropdown > li > a {
+            width: 100%;
+            display: block;
+            text-decoration: none;
+            white-space: nowrap;
+            clear: both;
+            color: #000;
+            margin: 0;
+            padding: 8px;
+        }
+
+            .dropdown > li > a:hover {
+                background-color: #eee;
+            }
+
+.dropdown-h > li {
+    display: inline-block;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 5px;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px;
+    margin: 2px 0 0;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+    .dropdown-menu li {
+        width: 100%;
+    }
+
+        .dropdown-menu li a {
+            display: block;
+            padding: 3px 20px;
+            clear: both;
+            color: #333;
+            white-space: nowrap;
+            text-decoration: none;
+            width: 100%;
+        }
+
+            .dropdown-menu li a:hover {
+                text-decoration: none;
+                background-color: #ccc;
+            }
+
+.divider {
+    height: 2px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #e5e5e5;
+    float: left;
+}
+
+.dropdown-caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 4px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid \9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+/*FIN DROPDOWN**************************/
+/*DROPDOWN 2******************************/
+.dropdown2 {
+    position: relative;
+    margin: 3px 0px 0px 0px;
+    border-radius: 5px;
+    background-color: transparent;
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 5px;
+    font-size:12px;
+}
+
+    .dropdown2 > li {
+        position: relative;
+        min-width: 100px;
+        margin-right: -4px;
+        padding: 0;
+    }
+
+        .dropdown2 > li > a {
+            width: 100%;
+            display: block;
+            text-decoration: none;
+            white-space: nowrap;
+            clear: both;
+            color: #000;
+            margin: 0;
+            padding: 8px;
+        }
+
+            .dropdown2 > li > a:hover {
+                text-decoration:underline;
+            }
+.dropdown-menu2 {
+    position: absolute;
+    top: 100%;
+    right: 5px;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px;
+    margin: 2px 0 0;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+    .dropdown-menu2 li {
+        width: 100%;
+    }
+
+        .dropdown-menu2 li a {
+            display: block;
+            padding: 3px 20px;
+            clear: both;
+            color: #000;
+            white-space: nowrap;
+            text-decoration: none;
+            width: 100%;
+            font-size:12px;
+        }
+
+            .dropdown-menu2 li a:hover {
+                text-decoration: none;
+                background-color: #ccc;
+            }
+
+
+
+/*FIN DROPDOWN 2**************************/
+
+
+.side-menu {
+    position: absolute;
+    display: block;
+    width: 300px;
+    height: 100%;
+    background-color: #f8f8f8;
+    border-right: 1px solid #e7e7e7;
+    z-index: 2;
+}
+
+
+.side-body {
+    margin-left: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 1;
+}
+
+.side-body-1 {
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 1;
+}
+
+
+@media (max-width: 800px) {
+    .btn-hamburger {
+        display: block;
+    }
+
+    .side-menu {
+        /*height: 0;
+        border-right: 0;*/
+        border-bottom: 1px solid #e7e7e7;
+        top: 60px;
+        left: -310px;
+    }
+
+    .slide-menu {
+        left: 0px;
+    }
+
+    /* Slide side body*/
+    .side-body {
+        margin-left: 0px;
+        -moz-animation: bodyslideout 300ms forwards;
+        -o-animation: bodyslideout 300ms forwards;
+        -webkit-animation: bodyslideout 300ms forwards;
+        animation: bodyslideout 300ms forwards;
+        /*-webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;*/
+    }
+
+    .banner-title {
+        display: none;
+    }
+
+    .banner-title-img {
+        display: none;
+    }
+}
+/*MENU PRINCIPAL*/
+@media (max-width: 800px) {
+    #menu {
+        display: none;
+    }
+
+        #menu ul {
+            position: absolute;
+            top: 125px;
+            background-color: #D44339;
+            width: 200px;
+        }
+
+        #menu li ul {
+            display: inline-block;
+            /*margin-left:190px;
+        margin-top:-20px;*/
+        }
+
+        #menu ul li {
+            display: inline;
+            float: none;
+        }
+
+            #menu ul li a {
+                width: 190px;
+            }
+
+            #menu ul li ul li a {
+                padding-left: 30px;
+            }
+}
+
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+    /* items del menu */
+
+    #menu ul li {
+        background-color: none;
+    }
+
+    /* enlaces del menu */
+
+    #menu ul a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 400;
+        padding: 10px;
+        border-radius: 6px;
+    }
+
+        #menu ul a:hover {
+            text-decoration: underline;
+        }
+
+    /* items del menu */
+
+    #menu ul li {
+        position: relative;
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+
+        /* efecto al pasar el ratón por los items del menu */
+
+        #menu ul li:hover {
+            border-radius: 6px;
+        }
+    /* menu desplegable */
+
+    #menu ul ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #D44339;
+        padding: 0;
+        z-index: 100;
+    }
+
+        /* items del menu desplegable */
+
+        #menu ul ul li {
+            float: none;
+            min-width: 200px;
+            z-index:100;
+        }
+
+        /* enlaces de los items del menu desplegable */
+
+        #menu ul ul a {
+            line-height: 120%;
+            padding: 5px 15px;
+            z-index:100;
+        }
+
+    /* items del menu desplegable al pasar el ratón */
+
+    #menu ul li:hover > ul {
+        display: block;
+    }
